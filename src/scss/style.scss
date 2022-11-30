@@ -63,6 +63,12 @@ header{
 
         .heading{
             margin-left: 15px;
+            a img{
+                @media (max-width:215px) {
+                    height: 40px;
+                    width: 80px;
+                }
+            }
         }
         .menuitems .menuicon{
             display: none;
@@ -114,6 +120,7 @@ header{
     }
     @media screen and (max-width:985px) {
         background-color: #f0eed4;
+        height: 100vh;
     }
     @media screen and (max-width:760px) {
         display: flex;
@@ -446,6 +453,7 @@ header{
     }
     h6{
         font-size: 16px;
+        font-family: "lightt";
         color: rgb(255, 0, 43);
     }
 }
