@@ -623,20 +623,36 @@ header .container .menuitems ul li a {
 }
 
 .black {
-  height: 90vh;
   width: 100vw;
   background-color: #162b45;
 }
+@media (max-width: 1040px) {
+  .black {
+    flex-wrap: wrap;
+  }
+}
 .black .box {
   background-color: #2e4158;
-  height: 60%;
   width: 18%;
-  margin: 0px 20px;
+  margin: 200px 20px;
   flex-direction: column;
   justify-content: space-between;
+  gap: 30px;
   padding: 40px 10px;
   border-radius: 5px;
   transition: 1s;
+}
+@media (max-width: 1040px) {
+  .black .box {
+    width: 32%;
+    padding: 20px 5px;
+    margin: 10px;
+  }
+}
+@media (max-width: 622px) {
+  .black .box {
+    width: 80%;
+  }
 }
 .black .box:hover {
   background-color: white;
@@ -653,6 +669,8 @@ header .container .menuitems ul li a {
 .black .box .pic {
   height: 60px;
   width: 60px;
+  min-width: 60px;
+  min-height: 60px;
   font-size: 18px;
   color: white;
   border-radius: 50%;
