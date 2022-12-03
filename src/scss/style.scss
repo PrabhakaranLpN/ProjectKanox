@@ -120,7 +120,6 @@ header{
     }
     @media screen and (max-width:985px) {
         background-color: #f0eed4;
-        height: 100vh;
     }
     @media screen and (max-width:760px) {
         display: flex;
@@ -526,46 +525,106 @@ header{
 
 }
 .about{
-    height: 130vh;
     width: 100vw;
-    padding: 100px 0px 0px 0px;
+    padding: 50px 0px;
     position: relative;
     @extend %fsalign;
-    .cont{
-        margin-top: 150px;
-        height: 100%;
-        width: 45%;
+    flex-direction: row;
+    @media (max-width:984px){
+        flex-wrap: wrap;
+        margin: 50px 0px;
+        padding: 200px 0px;
     }
+    .anim1{
+        position: absolute;
+        top: 20px;
+        left: 60px;
+    }
+        
+
+
     .c1{
         width: 47%;
+        margin: 200px 0px;
         background-image: url("https://preview.colorlib.com/theme/kanox/img/about_overlay.png");
         background-repeat: no-repeat;
-        background-size: 90% 80%;
+        background-size: cover;
         position: relative;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        @media (max-width:984px){
+            width: 100%;
+            margin: 0px 10px;
+        }
         .big{
-            position: absolute;
-            top: 50px;
+            @media (max-width:984px){
+                width: 100%;
+            }
         }
         .small{
             position: absolute;
-            top: -50px;
-            right: 0px;
+            top: -110px;
+            left: 200px;
+            z-index: 2;
+            @media (max-width:984px){
+                display: none;
+            }
+        }
+        .frame{
+            height: 210px;
+            width: 190px;
+            border: 8px solid rgb(255, 0, 128);
+            position: absolute;
+            right: 200px;
+            bottom: -20px;
+            @media screen and (max-width:1250px) and (min-width:985px){
+                display: none;
+            }
+            @media (max-width:984px){
+                height: 160px;
+                width: 160px;
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+            }
+            
+            h2{
+                position: absolute;
+                top: 40px;
+                left: 120px;
+                font-weight: bold;
+                font-family: "oswald";
+                font-size: 45px;
+                letter-spacing: 1px;
+                line-height: 50px;
+                color: #112e41;
+                @media (max-width:984px) {
+                    font-size: 25px;
+                    color: white;
+                    left: 5px;
+                }
+            }
         }
         
     }
     .c2{
         padding-left: 100px;
         padding-right: 80px;
-        padding-top: 100px;
-        padding-bottom: 200px;
-        margin-bottom: 150px;
+        margin: 200px 0px;
+        width: 45%;
+        margin: 150px 0px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         width: 33vw;
         text-align: left;
         word-wrap: break-word;
-        width: 39vw;
+        @media (max-width:984px){
+            width: 100%;
+            margin:0px 10px;
+            padding: 0px;
+        }
         
         a{
             text-decoration: none;
@@ -611,23 +670,5 @@ header{
             line-height: 30px;
         }
     }
-    .frame{
-        height: 210px;
-        width: 190px;
-        border: 8px solid rgb(255, 0, 128);
-        position: absolute;
-        left: 255px;
-        bottom: 20px;
-        h2{
-            position: absolute;
-            left: 100px;
-            top: 40px;
-            font-weight: bold;
-            font-family: "oswald";
-            font-size: 45px;
-            letter-spacing: 1px;
-            line-height: 50px;
-            color: #112e41;
-        }
-    }
+    
 }
