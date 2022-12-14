@@ -707,6 +707,245 @@ header .container .menuitems ul li a {
   position: absolute;
   top: 20px;
   left: 60px;
+  -webkit-animation: abanim1 15s infinite alternate;
+          animation: abanim1 15s infinite alternate;
+}
+@-webkit-keyframes abanim1 {
+  0% {
+    position: absolute;
+    top: 40px;
+    left: 70px;
+    height: 40px;
+    width: 40px;
+  }
+  30% {
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    height: 60px;
+    width: 60px;
+  }
+  50% {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    height: 70px;
+    width: 70px;
+  }
+  75% {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    height: 90px;
+    width: 90px;
+  }
+  100% {
+    position: absolute;
+    top: 100px;
+    left: 80px;
+    height: 10px;
+    width: 10px;
+  }
+}
+@keyframes abanim1 {
+  0% {
+    position: absolute;
+    top: 40px;
+    left: 70px;
+    height: 40px;
+    width: 40px;
+  }
+  30% {
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    height: 60px;
+    width: 60px;
+  }
+  50% {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    height: 70px;
+    width: 70px;
+  }
+  75% {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    height: 90px;
+    width: 90px;
+  }
+  100% {
+    position: absolute;
+    top: 100px;
+    left: 80px;
+    height: 10px;
+    width: 10px;
+  }
+}
+.about .anim2 {
+  position: absolute;
+  top: 350px;
+  right: 50px;
+  -webkit-animation: abanim2 10s infinite alternate;
+          animation: abanim2 10s infinite alternate;
+}
+@-webkit-keyframes abanim2 {
+  0% {
+    position: absolute;
+    top: 350px;
+    right: 50px;
+    height: 40px;
+    width: 40px;
+  }
+  30% {
+    position: absolute;
+    top: 450px;
+    right: 80px;
+    height: 60px;
+    width: 60px;
+  }
+  50% {
+    position: absolute;
+    top: 330px;
+    right: 50px;
+    height: 70px;
+    width: 70px;
+  }
+  75% {
+    position: absolute;
+    top: 420px;
+    right: 90px;
+    height: 90px;
+    width: 90px;
+  }
+  100% {
+    position: absolute;
+    top: 500px;
+    right: 70px;
+    height: 10px;
+    width: 10px;
+  }
+}
+@keyframes abanim2 {
+  0% {
+    position: absolute;
+    top: 350px;
+    right: 50px;
+    height: 40px;
+    width: 40px;
+  }
+  30% {
+    position: absolute;
+    top: 450px;
+    right: 80px;
+    height: 60px;
+    width: 60px;
+  }
+  50% {
+    position: absolute;
+    top: 330px;
+    right: 50px;
+    height: 70px;
+    width: 70px;
+  }
+  75% {
+    position: absolute;
+    top: 420px;
+    right: 90px;
+    height: 90px;
+    width: 90px;
+  }
+  100% {
+    position: absolute;
+    top: 500px;
+    right: 70px;
+    height: 10px;
+    width: 10px;
+  }
+}
+.about .anim3 {
+  position: absolute;
+  top: 550px;
+  left: 500px;
+  -webkit-animation: abanim3 10s infinite alternate;
+          animation: abanim3 10s infinite alternate;
+  z-index: 3;
+}
+@-webkit-keyframes abanim3 {
+  0% {
+    position: absolute;
+    top: 600px;
+    left: 500px;
+    height: 40px;
+    width: 40px;
+  }
+  30% {
+    position: absolute;
+    top: 650px;
+    left: 430px;
+    height: 60px;
+    width: 60px;
+  }
+  50% {
+    position: absolute;
+    top: 630px;
+    left: 450px;
+    height: 70px;
+    width: 70px;
+  }
+  75% {
+    position: absolute;
+    top: 570px;
+    left: 490px;
+    height: 90px;
+    width: 90px;
+  }
+  100% {
+    position: absolute;
+    top: 480px;
+    left: 580px;
+    height: 10px;
+    width: 10px;
+  }
+}
+@keyframes abanim3 {
+  0% {
+    position: absolute;
+    top: 600px;
+    left: 500px;
+    height: 40px;
+    width: 40px;
+  }
+  30% {
+    position: absolute;
+    top: 650px;
+    left: 430px;
+    height: 60px;
+    width: 60px;
+  }
+  50% {
+    position: absolute;
+    top: 630px;
+    left: 450px;
+    height: 70px;
+    width: 70px;
+  }
+  75% {
+    position: absolute;
+    top: 570px;
+    left: 490px;
+    height: 90px;
+    width: 90px;
+  }
+  100% {
+    position: absolute;
+    top: 480px;
+    left: 580px;
+    height: 10px;
+    width: 10px;
+  }
 }
 .about .c1 {
   width: 47%;
@@ -733,7 +972,7 @@ header .container .menuitems ul li a {
 .about .c1 .small {
   position: absolute;
   top: -110px;
-  left: 200px;
+  left: 300px;
   z-index: 2;
 }
 @media (max-width: 984px) {
