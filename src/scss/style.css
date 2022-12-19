@@ -1081,4 +1081,180 @@ header .container .menuitems ul li a {
   font-size: 15px;
   color: #646464;
   line-height: 30px;
+}
+
+.recentWork {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.recentWork .rowbox {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  border: 2px solid black;
+}
+.recentWork .r2, .recentWork .r4 {
+  height: 450px;
+  display: flex;
+}
+.recentWork .r2 img, .recentWork .r4 img {
+  height: 90%;
+  width: 50%;
+  margin-left: 100px;
+}
+.recentWork .r2 .para, .recentWork .r4 .para {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: column;
+  font-family: oswald;
+  overflow-wrap: break-word;
+}
+.recentWork .r2 .para h5, .recentWork .r4 .para h5 {
+  font-size: 15px;
+  color: #ff1481;
+  overflow-wrap: break-word;
+}
+.recentWork .r2 .para h3, .recentWork .r4 .para h3 {
+  color: #112e41;
+  font-size: 30px;
+  padding-right: 100px;
+  overflow-wrap: break-word;
+}
+.recentWork .r2 .para p, .recentWork .r4 .para p {
+  font-size: 14px;
+  font-family: robotos;
+  padding-right: 48px;
+  line-height: 25px;
+  margin: 10px 0px;
+  color: #112e41;
+  overflow-wrap: break-word;
+}
+.recentWork .r2 .para a, .recentWork .r4 .para a {
+  margin-top: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+.recentWork .r2 .para a i, .recentWork .r4 .para a i {
+  margin: 0px 10px;
+}
+.recentWork .r2 .para a:hover, .recentWork .r4 .para a:hover {
+  color: #ff1481;
+}
+@media (max-width: 760px) {
+  .recentWork .r2, .recentWork .r4 {
+    display: flex;
+    flex-direction: column;
+  }
+  .recentWork .r2 img, .recentWork .r4 img {
+    width: 100%;
+    height: 50%;
+  }
+  .recentWork .r2 .para, .recentWork .r4 .para {
+    width: 100%;
+    height: 50%;
+  }
+}
+.recentWork .r3 {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  justify-content: start;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+  gap: 50px;
+}
+.recentWork .r3 img {
+  height: 90%;
+  width: 50%;
+}
+.recentWork .r3 .para {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: column;
+  font-family: oswald;
+  overflow-wrap: break-word;
+}
+.recentWork .r3 .para h5 {
+  font-size: 15px;
+  color: #ff1481;
+  overflow-wrap: break-word;
+}
+.recentWork .r3 .para h3 {
+  color: #112e41;
+  font-size: 30px;
+  padding-right: 100px;
+  overflow-wrap: break-word;
+}
+.recentWork .r3 .para p {
+  font-size: 14px;
+  font-family: robotos;
+  padding-right: 48px;
+  line-height: 25px;
+  margin: 10px 0px;
+  color: #112e41;
+  overflow-wrap: break-word;
+}
+.recentWork .r3 .para a {
+  margin-top: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+.recentWork .r3 .para a i {
+  margin: 0px 10px;
+}
+.recentWork .r3 .para a:hover {
+  color: #ff1481;
+}
+@media (max-width: 760px) {
+  .recentWork .r3 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .recentWork .r3 img {
+    width: 100%;
+    height: 50%;
+  }
+  .recentWork .r3 .para {
+    width: 100%;
+    height: 50%;
+  }
+}
+.recentWork .r1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  margin: 20px 0px;
+}
+.recentWork .r1 h4 {
+  font-size: 15px;
+  font-family: robotos;
+  color: #ff1481;
+}
+.recentWork .r1 h2 {
+  font-family: oswald;
+  font-weight: bold;
+  color: #112e41;
+  font-size: 45px;
 }/*# sourceMappingURL=style.css.map */
