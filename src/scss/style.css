@@ -1093,28 +1093,32 @@ header .container .menuitems ul li a {
 }
 .recentWork .rowbox {
   width: 100%;
-  height: auto;
   display: flex;
   justify-content: end;
   align-items: flex-end;
   border: 2px solid black;
 }
 .recentWork .r2, .recentWork .r4 {
-  height: 450px;
   display: flex;
+  justify-content: flex-end;
+  gap: 100px;
 }
-.recentWork .r2 img, .recentWork .r4 img {
-  height: 90%;
+.recentWork .r2 .imgg, .recentWork .r4 .imgg {
+  height: 100%;
   width: 50%;
-  margin-left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
 }
 .recentWork .r2 .para, .recentWork .r4 .para {
   width: 30%;
-  height: 100%;
+  background-color: aqua;
+  margin-left: 180px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
   flex-direction: column;
   font-family: oswald;
   overflow-wrap: break-word;
@@ -1122,13 +1126,11 @@ header .container .menuitems ul li a {
 .recentWork .r2 .para h5, .recentWork .r4 .para h5 {
   font-size: 15px;
   color: #ff1481;
-  overflow-wrap: break-word;
 }
 .recentWork .r2 .para h3, .recentWork .r4 .para h3 {
   color: #112e41;
   font-size: 30px;
   padding-right: 100px;
-  overflow-wrap: break-word;
 }
 .recentWork .r2 .para p, .recentWork .r4 .para p {
   font-size: 14px;
@@ -1137,7 +1139,6 @@ header .container .menuitems ul li a {
   line-height: 25px;
   margin: 10px 0px;
   color: #112e41;
-  overflow-wrap: break-word;
 }
 .recentWork .r2 .para a, .recentWork .r4 .para a {
   margin-top: 20px;
@@ -1153,40 +1154,54 @@ header .container .menuitems ul li a {
 .recentWork .r2 .para a:hover, .recentWork .r4 .para a:hover {
   color: #ff1481;
 }
-@media (max-width: 760px) {
+@media (max-width: 1200px) {
+  .recentWork .r2 .para h3, .recentWork .r4 .para h3 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1100px) {
   .recentWork .r2, .recentWork .r4 {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-  }
-  .recentWork .r2 img, .recentWork .r4 img {
-    width: 100%;
-    height: 50%;
   }
   .recentWork .r2 .para, .recentWork .r4 .para {
     width: 100%;
-    height: 50%;
+    height: auto;
+    margin: 0px;
+  }
+  .recentWork .r2 .imgg, .recentWork .r4 .imgg {
+    width: 100%;
+    margin: 0px;
+  }
+  .recentWork .r2 .imgg img, .recentWork .r4 .imgg img {
+    height: 100%;
+    width: 100%;
   }
 }
 .recentWork .r3 {
-  width: 100%;
-  height: 450px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+}
+.recentWork .r3 .imgg {
+  height: 100%;
+  width: 50%;
   display: flex;
   justify-content: start;
-  align-items: flex-end;
-  flex-direction: row-reverse;
-  gap: 50px;
-}
-.recentWork .r3 img {
-  height: 90%;
-  width: 50%;
+  align-items: center;
+  background-color: blue;
+  margin-right: 100px;
 }
 .recentWork .r3 .para {
   width: 30%;
-  height: 100%;
+  background-color: aqua;
+  margin-right: 180px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
   flex-direction: column;
   font-family: oswald;
   overflow-wrap: break-word;
@@ -1194,13 +1209,11 @@ header .container .menuitems ul li a {
 .recentWork .r3 .para h5 {
   font-size: 15px;
   color: #ff1481;
-  overflow-wrap: break-word;
 }
 .recentWork .r3 .para h3 {
   color: #112e41;
   font-size: 30px;
   padding-right: 100px;
-  overflow-wrap: break-word;
 }
 .recentWork .r3 .para p {
   font-size: 14px;
@@ -1209,7 +1222,6 @@ header .container .menuitems ul li a {
   line-height: 25px;
   margin: 10px 0px;
   color: #112e41;
-  overflow-wrap: break-word;
 }
 .recentWork .r3 .para a {
   margin-top: 20px;
@@ -1225,18 +1237,9 @@ header .container .menuitems ul li a {
 .recentWork .r3 .para a:hover {
   color: #ff1481;
 }
-@media (max-width: 760px) {
-  .recentWork .r3 {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .recentWork .r3 img {
-    width: 100%;
-    height: 50%;
-  }
-  .recentWork .r3 .para {
-    width: 100%;
-    height: 50%;
+@media (max-width: 1200px) {
+  .recentWork .r3 .para h3 {
+    font-size: 20px;
   }
 }
 .recentWork .r1 {

@@ -824,42 +824,44 @@ header{
 
     .rowbox{
         width: 100%;
-        height: auto;
         display: flex;
         justify-content: end;
         align-items: flex-end;
         border: 2px solid black;
     }
     .r2, .r4{
-        height: 450px;
         display: flex;
+        justify-content: flex-end;
+        gap: 100px;
         
-        img{
-            height: 90%;
+        .imgg{
+            height: 100%;
             width: 50%;
-            margin-left: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: blue;
         }
         .para{
             width: 30%;
-            height: 100%;
+            background-color: aqua;
+            margin-left: 180px;
             display: flex;
             align-items: flex-start;
             justify-content: center;
-            gap: 20px;
+            gap: 10px;
             flex-direction: column;
             font-family: oswald;
             overflow-wrap: break-word;
             h5{
                 font-size: 15px;
                 color: #ff1481;
-                overflow-wrap: break-word;
             }
 
             h3{
                 color: #112e41;
                 font-size: 30px;
                 padding-right: 100px;
-                overflow-wrap: break-word;
             }
             p{
                 font-size: 14px;
@@ -868,7 +870,6 @@ header{
                 line-height: 25px;
                 margin: 10px 0px;
                 color: #112e41;
-                overflow-wrap: break-word;
             }
             a{
                 margin-top: 20px;
@@ -887,56 +888,72 @@ header{
                 }
             }
         }
-        @media (max-width:760px) {
-            display: flex;
-            flex-direction: column;
 
-            img{
-                width: 100%;
-                height: 50%;
-            }
+        @media (max-width:1200px) {
             .para{
-                width: 100%;
-                height: 50%;
+                h3{
+                    font-size: 20px;
+                }
             }
             
         }
+        @media (max-width:1100px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .para{
+                width: 100%;
+                height: auto;
+                margin: 0px;
+            }
+            .imgg{
+                width: 100%;
+                margin: 0px;
+                img{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+        
     }
 
     .r3{
-        width: 100%;
-        height: 450px;
         display: flex;
-        justify-content: start;
-        align-items: flex-end;
+        justify-content: flex-end;
         flex-direction: row-reverse;
-        gap: 50px;
         
-        img{
-            height: 90%;
+        .imgg{
+            height: 100%;
             width: 50%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            background-color: blue;
+            margin-right: 100px;
         }
         .para{
             width: 30%;
-            height: 100%;
+            background-color: aqua;
+            margin-right: 180px;
             display: flex;
             align-items: flex-start;
             justify-content: center;
-            gap: 20px;
+            gap: 10px;
             flex-direction: column;
             font-family: oswald;
             overflow-wrap: break-word;
             h5{
                 font-size: 15px;
                 color: #ff1481;
-                overflow-wrap: break-word;
             }
 
             h3{
                 color: #112e41;
                 font-size: 30px;
                 padding-right: 100px;
-                overflow-wrap: break-word;
             }
             p{
                 font-size: 14px;
@@ -945,7 +962,6 @@ header{
                 line-height: 25px;
                 margin: 10px 0px;
                 color: #112e41;
-                overflow-wrap: break-word;
             }
             a{
                 margin-top: 20px;
@@ -964,17 +980,11 @@ header{
                 }
             }
         }
-        @media (max-width:760px) {
-            display: flex;
-            flex-direction: column-reverse;
-
-            img{
-                width: 100%;
-                height: 50%;
-            }
+        @media (max-width:1200px) {
             .para{
-                width: 100%;
-                height: 50%;
+                h3{
+                    font-size: 20px;
+                }
             }
             
         }
