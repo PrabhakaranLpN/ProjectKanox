@@ -1083,181 +1083,143 @@ header .container .menuitems ul li a {
   line-height: 30px;
 }
 
-.recentWork {
+.recentwork {
   width: 100vw;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
-  gap: 50px;
-}
-.recentWork .rowbox {
-  width: 100%;
-  display: flex;
-  justify-content: end;
-  align-items: flex-end;
-  border: 2px solid black;
-}
-.recentWork .r2, .recentWork .r4 {
-  display: flex;
-  justify-content: flex-end;
+  align-items: center;
   gap: 100px;
 }
-.recentWork .r2 .imgg, .recentWork .r4 .imgg {
-  height: 100%;
-  width: 50%;
+.recentwork .container {
+  width: 100%;
+  border: 2px solid black;
+}
+.recentwork .rw1 {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  background-color: blue;
-}
-.recentWork .r2 .para, .recentWork .r4 .para {
-  width: 30%;
-  background-color: aqua;
-  margin-left: 180px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 10px;
   flex-direction: column;
+  gap: 30px;
   font-family: oswald;
-  overflow-wrap: break-word;
 }
-.recentWork .r2 .para h5, .recentWork .r4 .para h5 {
-  font-size: 15px;
-  color: #ff1481;
+.recentwork .rw1 h1 {
+  font-size: 40px;
 }
-.recentWork .r2 .para h3, .recentWork .r4 .para h3 {
-  color: #112e41;
-  font-size: 30px;
-  padding-right: 100px;
-}
-.recentWork .r2 .para p, .recentWork .r4 .para p {
-  font-size: 14px;
-  font-family: robotos;
-  padding-right: 48px;
-  line-height: 25px;
-  margin: 10px 0px;
-  color: #112e41;
-}
-.recentWork .r2 .para a, .recentWork .r4 .para a {
-  margin-top: 20px;
-  text-decoration: none;
-  color: black;
-  font-size: 15px;
-  font-weight: bold;
-  margin: 10px 0px;
-}
-.recentWork .r2 .para a i, .recentWork .r4 .para a i {
-  margin: 0px 10px;
-}
-.recentWork .r2 .para a:hover, .recentWork .r4 .para a:hover {
-  color: #ff1481;
-}
-@media (max-width: 1200px) {
-  .recentWork .r2 .para h3, .recentWork .r4 .para h3 {
-    font-size: 20px;
-  }
-}
-@media (max-width: 1100px) {
-  .recentWork .r2, .recentWork .r4 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .recentWork .r2 .para, .recentWork .r4 .para {
-    width: 100%;
-    height: auto;
-    margin: 0px;
-  }
-  .recentWork .r2 .imgg, .recentWork .r4 .imgg {
-    width: 100%;
-    margin: 0px;
-  }
-  .recentWork .r2 .imgg img, .recentWork .r4 .imgg img {
-    height: 100%;
-    width: 100%;
-  }
-}
-.recentWork .r3 {
+.recentwork .rw2, .recentwork .rw4, .recentwork .rw3 {
+  width: 100%;
   display: flex;
   justify-content: flex-end;
-  flex-direction: row-reverse;
+  align-items: center;
+  gap: 80px;
 }
-.recentWork .r3 .imgg {
+.recentwork .rw2 .para, .recentwork .rw4 .para, .recentwork .rw3 .para {
+  width: 30%;
   height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 50px;
+  border: 1px solid white;
+  font-family: oswald;
+  padding-right: 50px;
+}
+.recentwork .rw2 .para h5, .recentwork .rw4 .para h5, .recentwork .rw3 .para h5 {
+  font-size: 15px;
+  color: #ff1481;
+}
+.recentwork .rw2 .para h1, .recentwork .rw4 .para h1, .recentwork .rw3 .para h1 {
+  font-size: 30px;
+  padding-right: 20px;
+  color: #112e41;
+}
+.recentwork .rw2 .para p, .recentwork .rw4 .para p, .recentwork .rw3 .para p {
+  padding-right: 10px;
+  color: #112e41;
+}
+.recentwork .rw2 .para a, .recentwork .rw4 .para a, .recentwork .rw3 .para a {
+  color: black;
+  text-decoration: none;
+}
+.recentwork .rw2 .para a:hover, .recentwork .rw4 .para a:hover, .recentwork .rw3 .para a:hover {
+  color: #ff1481;
+}
+.recentwork .rw2 .photo, .recentwork .rw4 .photo, .recentwork .rw3 .photo {
+  background-color: palevioletred;
+  border: 1px solid greenyellow;
+  height: 450px;
   width: 50%;
+  background: url(../images/rwimg1.webp);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.recentwork .rw4 .photo {
+  background: url(../images/rwimg3.webp);
+}
+.recentwork .rw3 {
+  width: 100%;
   display: flex;
   justify-content: start;
+  flex-direction: row-reverse;
   align-items: center;
-  background-color: blue;
-  margin-right: 100px;
+  gap: 80px;
 }
-.recentWork .r3 .para {
-  width: 30%;
-  background-color: aqua;
-  margin-right: 180px;
+.recentwork .rw3 .photo {
+  background: url(../images/rwimg2.webp);
+}
+.recentwork .rw5 {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  background-color: #112e41;
+  padding: 100px 0px;
+}
+.recentwork .rw5 .icons {
+  color: white;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
   align-items: flex-start;
-  justify-content: center;
-  gap: 10px;
   flex-direction: column;
-  font-family: oswald;
-  overflow-wrap: break-word;
 }
-.recentWork .r3 .para h5 {
-  font-size: 15px;
-  color: #ff1481;
+.recentwork .rw5 .icons .photo {
+  height: 50px;
+  width: 50px;
+  background: url(../images/rw5a.png);
+  background-size: contain;
 }
-.recentWork .r3 .para h3 {
-  color: #112e41;
-  font-size: 30px;
-  padding-right: 100px;
-}
-.recentWork .r3 .para p {
-  font-size: 14px;
-  font-family: robotos;
-  padding-right: 48px;
-  line-height: 25px;
-  margin: 10px 0px;
-  color: #112e41;
-}
-.recentWork .r3 .para a {
-  margin-top: 20px;
-  text-decoration: none;
-  color: black;
-  font-size: 15px;
-  font-weight: bold;
-  margin: 10px 0px;
-}
-.recentWork .r3 .para a i {
-  margin: 0px 10px;
-}
-.recentWork .r3 .para a:hover {
-  color: #ff1481;
-}
-@media (max-width: 1200px) {
-  .recentWork .r3 .para h3 {
-    font-size: 20px;
-  }
-}
-.recentWork .r1 {
+.recentwork .rw5 .icons .text {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   gap: 20px;
-  margin: 20px 0px;
+  font-family: tbold;
 }
-.recentWork .r1 h4 {
-  font-size: 15px;
-  font-family: robotos;
-  color: #ff1481;
+.recentwork .rw5 .icons .text span {
+  font-size: 60px;
 }
-.recentWork .r1 h2 {
-  font-family: oswald;
-  font-weight: bold;
-  color: #112e41;
-  font-size: 45px;
+.recentwork .rw5 .icons .text h4 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: lighter;
+  font-size: 25px;
+}
+.recentwork .rw5 .c2 .photo {
+  height: 50px;
+  width: 50px;
+  background: url(../images/rw5b.png);
+  background-size: contain;
+}
+.recentwork .rw5 .c3 .photo {
+  height: 50px;
+  width: 50px;
+  background: url(../images/rw5c.png);
+  background-size: contain;
+}
+.recentwork .rw5 .c4 .photo {
+  height: 50px;
+  width: 50px;
+  background: url(../images/rw5d.png);
+  background-size: contain;
 }/*# sourceMappingURL=style.css.map */
