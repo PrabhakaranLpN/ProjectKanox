@@ -613,12 +613,14 @@ header .container .menuitems ul li a {
 @media (max-width: 991px) {
   .center h1 {
     font-size: 25px;
+    word-wrap: break-word;
   }
 }
 .center h6 {
   font-size: 16px;
   font-family: "lightt";
   color: rgb(255, 0, 43);
+  word-wrap: break-word;
 }
 
 .black {
@@ -628,6 +630,7 @@ header .container .menuitems ul li a {
 @media (max-width: 1040px) {
   .black {
     flex-wrap: wrap;
+    word-wrap: break-word;
   }
 }
 .black .box {
@@ -678,6 +681,7 @@ header .container .menuitems ul li a {
 .black .box h1 {
   font-family: oswald;
   color: white;
+  word-wrap: break-word;
 }
 .black .box p {
   text-align: center;
@@ -688,6 +692,7 @@ header .container .menuitems ul li a {
   color: rgb(170, 170, 170);
   font-family: robotos;
   font-weight: bold;
+  word-wrap: break-word;
 }
 
 .about {
@@ -695,6 +700,7 @@ header .container .menuitems ul li a {
   padding: 50px 0px;
   position: relative;
   flex-direction: row;
+  gap: 100px;
 }
 @media (max-width: 984px) {
   .about {
@@ -1012,18 +1018,21 @@ header .container .menuitems ul li a {
   letter-spacing: 1px;
   line-height: 50px;
   color: #112e41;
+  word-wrap: break-word;
 }
 @media (max-width: 984px) {
   .about .c1 .frame h2 {
     font-size: 25px;
     color: white;
     left: 5px;
+    word-wrap: break-word;
   }
 }
 .about .c2 {
   padding-left: 100px;
   padding-right: 80px;
   margin: 200px 0px;
+  margin-left: 100px;
   width: 45%;
   margin: 150px 0px;
   display: flex;
@@ -1055,12 +1064,14 @@ header .container .menuitems ul li a {
   color: white;
   font-weight: bold;
   box-shadow: 0px 10px 30px rgba(190, 0, 88, 0.5);
+  word-wrap: break-word;
 }
 .about .c2 h6 {
   font-family: "robotos";
   font-weight: bold;
   color: #ff1481;
   font-size: 14px;
+  word-wrap: break-word;
 }
 .about .c2 h1 {
   font-family: "oswald";
@@ -1068,6 +1079,7 @@ header .container .menuitems ul li a {
   font-weight: bold;
   color: #112e41;
   padding-right: 20px;
+  word-wrap: break-word;
 }
 .about .c2 h4 {
   font-family: "oswald";
@@ -1075,25 +1087,34 @@ header .container .menuitems ul li a {
   font-weight: 100;
   color: #112e41;
   margin: 20px 0px;
+  word-wrap: break-word;
 }
 .about .c2 p {
   font-family: "robotos";
   font-size: 15px;
   color: #646464;
   line-height: 30px;
+  word-wrap: break-word;
+  padding-right: 20px;
 }
 
 .recentwork {
   width: 100vw;
+  background-color: rgb(218, 244, 253);
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  gap: 100px;
+  gap: 70px;
+}
+@media (max-width: 900px) {
+  .recentwork {
+    display: flex;
+    gap: 40px;
+  }
 }
 .recentwork .container {
   width: 100%;
-  border: 2px solid black;
 }
 .recentwork .rw1 {
   display: flex;
@@ -1106,12 +1127,31 @@ header .container .menuitems ul li a {
 .recentwork .rw1 h1 {
   font-size: 40px;
 }
+@media (max-width: 900px) {
+  .recentwork .rw1 {
+    display: flex;
+    gap: 20px;
+  }
+  .recentwork .rw1 h1 {
+    font-size: 20px;
+  }
+}
 .recentwork .rw2, .recentwork .rw4, .recentwork .rw3 {
   width: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 80px;
+}
+@media (max-width: 900px) {
+  .recentwork .rw2, .recentwork .rw4, .recentwork .rw3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px;
+  }
 }
 .recentwork .rw2 .para, .recentwork .rw4 .para, .recentwork .rw3 .para {
   width: 30%;
@@ -1121,9 +1161,19 @@ header .container .menuitems ul li a {
   align-items: flex-start;
   flex-direction: column;
   gap: 50px;
-  border: 1px solid white;
   font-family: oswald;
   padding-right: 50px;
+}
+@media (max-width: 1100px) {
+  .recentwork .rw2 .para, .recentwork .rw4 .para, .recentwork .rw3 .para {
+    width: 70%;
+    gap: 20px;
+  }
+}
+@media (max-width: 900px) {
+  .recentwork .rw2 .para, .recentwork .rw4 .para, .recentwork .rw3 .para {
+    width: 100%;
+  }
 }
 .recentwork .rw2 .para h5, .recentwork .rw4 .para h5, .recentwork .rw3 .para h5 {
   font-size: 15px;
@@ -1133,6 +1183,11 @@ header .container .menuitems ul li a {
   font-size: 30px;
   padding-right: 20px;
   color: #112e41;
+}
+@media (max-width: 1100px) {
+  .recentwork .rw2 .para h1, .recentwork .rw4 .para h1, .recentwork .rw3 .para h1 {
+    font-size: 20px;
+  }
 }
 .recentwork .rw2 .para p, .recentwork .rw4 .para p, .recentwork .rw3 .para p {
   padding-right: 10px;
@@ -1146,16 +1201,28 @@ header .container .menuitems ul li a {
   color: #ff1481;
 }
 .recentwork .rw2 .photo, .recentwork .rw4 .photo, .recentwork .rw3 .photo {
-  background-color: palevioletred;
-  border: 1px solid greenyellow;
   height: 450px;
   width: 50%;
-  background: url(../images/rwimg1.webp);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+  min-width: 30%;
+  min-height: 45%;
 }
-.recentwork .rw4 .photo {
-  background: url(../images/rwimg3.webp);
+@media (max-width: 1100px) {
+  .recentwork .rw2 .photo, .recentwork .rw4 .photo, .recentwork .rw3 .photo {
+    height: 350px;
+  }
+}
+@media (max-width: 900px) {
+  .recentwork .rw2 .photo, .recentwork .rw4 .photo, .recentwork .rw3 .photo {
+    width: 100%;
+  }
+}
+.recentwork .rw2 .photo img, .recentwork .rw4 .photo img, .recentwork .rw3 .photo img {
+  height: 100%;
+  width: 100%;
+}
+.recentwork .rw4 img {
+  height: 100%;
+  width: 100%;
 }
 .recentwork .rw3 {
   width: 100%;
@@ -1165,8 +1232,19 @@ header .container .menuitems ul li a {
   align-items: center;
   gap: 80px;
 }
-.recentwork .rw3 .photo {
-  background: url(../images/rwimg2.webp);
+@media (max-width: 900px) {
+  .recentwork .rw3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 50px;
+    padding: 20px;
+  }
+}
+.recentwork .rw3 .photo img {
+  height: 100%;
+  width: 100%;
 }
 .recentwork .rw5 {
   display: flex;
@@ -1174,19 +1252,47 @@ header .container .menuitems ul li a {
   align-items: center;
   gap: 100px;
   background-color: #112e41;
-  padding: 100px 0px;
+  padding: 100px 50px;
+}
+@media (max-width: 1150px) {
+  .recentwork .rw5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 50px 20px;
+  }
+}
+@media (max-width: 860px) {
+  .recentwork .rw5 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 50px 20px;
+  }
 }
 .recentwork .rw5 .icons {
   color: white;
   background-color: transparent;
+  height: 20%;
+  width: 20%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
 }
+@media (max-width: 1150px) {
+  .recentwork .rw5 .icons {
+    margin: 0px 100px;
+  }
+}
 .recentwork .rw5 .icons .photo {
   height: 50px;
+  min-height: 50px;
   width: 50px;
+  min-width: 50px;
   background: url(../images/rw5a.png);
   background-size: contain;
 }
@@ -1207,19 +1313,77 @@ header .container .menuitems ul li a {
 }
 .recentwork .rw5 .c2 .photo {
   height: 50px;
+  min-height: 50px;
   width: 50px;
+  min-width: 50px;
   background: url(../images/rw5b.png);
   background-size: contain;
 }
 .recentwork .rw5 .c3 .photo {
   height: 50px;
+  min-height: 50px;
   width: 50px;
+  min-width: 50px;
   background: url(../images/rw5c.png);
   background-size: contain;
 }
 .recentwork .rw5 .c4 .photo {
   height: 50px;
+  min-height: 50px;
   width: 50px;
+  min-width: 50px;
   background: url(../images/rw5d.png);
   background-size: contain;
+}
+
+.video {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2e4158;
+  flex-direction: column;
+  padding-top: 100px;
+}
+.video .recent {
+  width: 100%;
+  background-color: lightgreen;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 20px 0px;
+}
+.video .recent p {
+  font-family: oswald;
+  color: #ff1481;
+  font-size: 15px;
+}
+.video .recent h2 {
+  font-family: oswald;
+  font-size: 30px;
+}
+.video .contain {
+  display: flex;
+  height: 80vh;
+  width: 100vw;
+  justify-content: start;
+  align-items: flex-start;
+}
+.video .contain .player {
+  height: 100%;
+  width: 40%;
+  border: 1px solid red;
+}
+.video .contain .player img {
+  height: 100%;
+  width: 100%;
+  mix-blend-mode: screen;
+}
+.video .contain .move {
+  width: 40%;
+  height: 100%;
+  background-color: #2e4158;
+  opacity: 0.5;
 }/*# sourceMappingURL=style.css.map */
