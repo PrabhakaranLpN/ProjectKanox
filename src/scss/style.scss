@@ -855,6 +855,10 @@ header{
         gap: 30px;
         font-family: oswald;
 
+        h5{
+            color: #ff1481;
+        }
+
         h1{
             font-size: 40px;
         }
@@ -1136,18 +1140,83 @@ header{
        width: 100vw;
        justify-content: start;
        align-items: flex-start;
+       
 
        .player{
         height: 100%;
         width: 40%;
         border: 1px solid red;
+        position: relative;
+
+        p{
+            position: absolute;
+            bottom: 35%;
+            left: 35%;
+            font-size: 18px;
+            font-family: robotos;
+            color: white;
+        }
         
 
-        img{
+        .imgdiv{
             height: 100%;
             width: 100%;
+            background-color: black;
+
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                opacity: 0.3;
+            }
+        }
+
+        a{
+            position: absolute;
+            text-decoration: none;
+            left: 40%;
+            top: 40%;
+            color: white;
+            height: 80px;
+            width: 80px;
+            background-color: #ff1481;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i{
+                z-index: 2;
+            }
+
+            span{
+                height: 80px;
+                width: 80px;
+                background-color: #ff1481;
+                animation: play 1.2s cubic-bezier(.17,.67,.83,.67) infinite;
+                position: absolute;
+                border-radius: 50%;
+                z-index: 1;
+
+                @keyframes play {
+                0%{
+                    height: 100%;
+                    width: 100%;
+                    opacity: 1;
+                }
+                50%{
+                    height: 140%;
+                    width: 140%;
+                    opacity: 0.2;
+                }
+                100%{
+                    height: 180%;
+                    width: 180%;
+                    opacity: 0.1;
+                }
+            }
+        }
             
-            mix-blend-mode: screen;
+            
         }
 
        }
