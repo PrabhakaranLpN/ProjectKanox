@@ -1,4 +1,4 @@
-header, header .container, header .container .menuitems ul, .home, .home .anim1, .home .inside, .home .inside a, .home .i2, .center, .black, .black .box, .black .box .pic, .about .c2 a {
+header, header .container, header .container .menuitems ul, .home, .home .anim1, .home .inside, .home .inside a, .home .i2, .center, .black, .black .box, .black .box .pic, .about .c2 a, .center2, .truestory .title {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1349,7 +1349,6 @@ header .container .menuitems ul li a {
 }
 .video .recent {
   width: 100%;
-  background-color: lightgreen;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1376,7 +1375,6 @@ header .container .menuitems ul li a {
 .video .contain .player {
   height: 100%;
   width: 40%;
-  border: 1px solid red;
   position: relative;
 }
 .video .contain .player p {
@@ -1528,4 +1526,174 @@ header .container .menuitems ul li a {
   justify-content: start;
   gap: 40px;
   width: 100%;
+}
+
+.center2 {
+  height: 45vh;
+  width: 100vw;
+  background-color: white;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 130px;
+}
+.center2 h1 {
+  font-family: oswald;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  color: #112e41;
+  font-weight: bold;
+}
+@media (max-width: 991px) {
+  .center2 h1 {
+    font-size: 25px;
+    word-wrap: break-word;
+  }
+}
+.center2 h6 {
+  font-size: 16px;
+  font-family: "lightt";
+  color: rgb(255, 0, 43);
+  word-wrap: break-word;
+}
+
+.team {
+  height: 125vh;
+  width: 100vw;
+  background-color: #162b45;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.team .member {
+  height: 68%;
+  background-color: transparent;
+  border: 1px solid gray;
+  padding: 20px;
+}
+.team .member a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+.team .member a a {
+  color: black;
+  text-decoration: none;
+}
+.team .member .names {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px 10px;
+}
+.team .member .names a:hover {
+  color: #ff1481;
+}
+.team .member .names h3 {
+  font-family: oswald;
+  font-size: 26px;
+}
+.team .member .names p {
+  font-family: robotos;
+  font-size: 15px;
+  color: gray;
+}
+.team .member .names ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  list-style-type: disc;
+  margin: 10px 0px;
+  font-family: robotos;
+  font-size: 15px;
+}
+.team .member .names ul li a {
+  color: gray;
+}
+
+.truestory {
+  height: 135vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 80px 0px;
+}
+.truestory .title {
+  width: 100vw;
+  background-color: white;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.truestory .title h1 {
+  font-family: oswald;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  color: #112e41;
+  font-weight: bold;
+}
+.truestory .title h6 {
+  font-size: 16px;
+  font-family: "lightt";
+  color: rgb(255, 0, 43);
+  word-wrap: break-word;
+}
+.truestory .blockk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  gap: 30px;
+}
+.truestory .blockk .member {
+  height: 80%;
+  background-color: transparent;
+  border: 1px solid rgb(221, 221, 221);
+}
+.truestory .blockk .member a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+.truestory .blockk .member a a {
+  color: black;
+  text-decoration: none;
+}
+.truestory .blockk .member .names {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px 10px;
+}
+.truestory .blockk .member .names a:hover {
+  color: #ff1481;
+}
+.truestory .blockk .member .names h3 {
+  font-family: oswald;
+  font-size: 26px;
+}
+.truestory .blockk .member .names p {
+  font-family: robotos;
+  font-size: 15px;
+  color: gray;
+}
+.truestory .blockk .member .names ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  list-style-type: disc;
+  margin: 10px 0px;
+  font-family: robotos;
+  font-size: 15px;
+}
+.truestory .blockk .member .names ul li a {
+  color: gray;
 }/*# sourceMappingURL=style.css.map */
