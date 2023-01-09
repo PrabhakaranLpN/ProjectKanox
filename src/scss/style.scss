@@ -1447,63 +1447,80 @@ header{
         justify-content: center;
         align-items: center;
         height: 80%;
+        width: 30%;
         gap: 30px;
         .member{
-            height: 80%;
-            background-color: transparent;
+            height: 100%;
+            padding: 10px 0px;
             border: 1px solid rgb(221, 221, 221);
-
-            
-            a{
-                color: whitesmoke;
-                text-decoration: none;
-    
-                a{
-                    color: black;
-                    text-decoration: none;
-                }
-            }
     
             .names{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-                gap: 20px;
-                padding: 30px 10px;
-                a{
-                    &:hover{
-                        color: #ff1481;
-                    }
-                }
-    
-                h3{
-                    font-family: oswald;
-                    font-size: 26px;
-                }
-                p{
-                    font-family: robotos;
-                    font-size: 15px;
+                margin: 20px;
+                span{
                     color: gray;
+                    font-family: robotos;
+                    font-size: 14px;
                 }
-    
+                a{
+                    text-decoration: none;
+                    color: gray;
+                    font-family: robotos;
+                    font-size: 14px;
+                }
+                h2{
+                    font-family: oswald;
+                    font-size: 22px;
+                    margin: 0px 0px 20px;
+                }
                 ul{
                     display: flex;
-                    justify-content: center;
+                    justify-content: start;
                     align-items: center;
-                    gap: 20px;
-                    list-style-type: disc;
-                    margin: 10px 0px;
-                    font-family: robotos;
-                    font-size: 15px;
+                    flex-direction: row;
+                    gap: 30px;
                     li{
-                        a{
-                            color: gray;
-                        }
+                        list-style-type: none;
                     }
                 }
+
             }
         }
     }
 
+}
+
+
+
+
+.lastpage{
+    height: 80vh;
+    width: 100vw;
+    background-color: #112e41;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 130px;
+    padding: 25px 20px;
+
+
+    .div{
+        img{
+            margin: 10px 0px;
+        }
+        width: 20%;
+        border: 1px solid white;
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+        gap: 20px;
+        flex-direction: column;
+        font-family: robotos;
+        font-size: 14px;
+        line-height: 20px;
+        color: gray;
+    }
+
+    .two{
+        
+    }
 }
