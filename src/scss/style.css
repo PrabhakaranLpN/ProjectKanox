@@ -1690,7 +1690,7 @@ header .container .menuitems ul li a {
 .lastpage {
   height: 80vh;
   width: 100vw;
-  background-color: #112e41;
+  background-color: #162b45;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1699,7 +1699,6 @@ header .container .menuitems ul li a {
 }
 .lastpage .div {
   width: 20%;
-  border: 1px solid white;
   display: flex;
   justify-content: start;
   align-items: flex-start;
@@ -1712,4 +1711,65 @@ header .container .menuitems ul li a {
 }
 .lastpage .div img {
   margin: 10px 0px;
+}
+.lastpage .two {
+  width: 30%;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  gap: 30px;
+}
+.lastpage .two h4 {
+  font-family: oswald;
+  font-size: 25px;
+  color: white;
+}
+.lastpage .two .search {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 25px;
+  border: 1px solid rgb(117, 117, 117);
+}
+.lastpage .two .search input {
+  background: none;
+  border: none;
+  width: 75%;
+  color: rgb(197, 197, 197);
+}
+.lastpage .two .search div {
+  height: 80%;
+  width: 10%;
+  background-color: #ff1481;
+  color: rgb(197, 197, 197);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lastpage .two .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: rgb(197, 197, 197);
+}
+.lastpage .three {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+}
+.lastpage .three h4 {
+  font-family: oswald;
+  font-size: 25px;
+  color: white;
+}
+.lastpage .three .instaphoto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0px;
 }/*# sourceMappingURL=style.css.map */

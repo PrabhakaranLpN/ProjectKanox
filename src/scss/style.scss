@@ -1495,7 +1495,7 @@ header{
 .lastpage{
     height: 80vh;
     width: 100vw;
-    background-color: #112e41;
+    background-color: #162b45;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1508,7 +1508,6 @@ header{
             margin: 10px 0px;
         }
         width: 20%;
-        border: 1px solid white;
         display: flex;
         justify-content: start;
         align-items: flex-start;
@@ -1521,6 +1520,68 @@ header{
     }
 
     .two{
-        
+        width: 30%;
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+        gap: 30px;
+        h4{
+            font-family: oswald;
+            font-size: 25px;
+            color: white;
+        }
+        .search{
+            height: 40px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 25px;
+            border: 1px solid rgb(117, 117, 117);
+
+            input{
+                background: none;
+                border: none;
+                width: 75%;
+                color: rgb(197, 197, 197);   
+            }
+            div{
+                height: 80%;
+                width: 10%;
+                background-color: #ff1481;
+                color: rgb(197, 197, 197);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .social{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            color: rgb(197, 197, 197);
+        }
+
+    }
+
+    .three{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 30px;
+        h4{
+            font-family: oswald;
+            font-size: 25px;
+            color: white; 
+        }
+        .instaphoto{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0px;
+
+        }
     }
 }
