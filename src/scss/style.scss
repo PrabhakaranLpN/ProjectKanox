@@ -1114,6 +1114,8 @@ header{
     flex-direction: column;
     padding-top: 100px;
 
+    
+
     .recent{
         width: 100%;
         display: flex;
@@ -1138,12 +1140,27 @@ header{
        width: 100vw;
        justify-content: start;
        align-items: flex-start;
+
+       @media screen and (max-width:1000px) {
+        display: flex;
+        flex-direction: column;
+        height: 140vh;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 10px;
+        
+       }
        
 
        .player{
         height: 100%;
         width: 40%;
         position: relative;
+        @media screen and (max-width:1000px) {
+            width: 100%;
+            height: 45%;
+            
+           }
 
         p{
             position: absolute;
@@ -1229,13 +1246,20 @@ header{
     .profile{
         display: flex;
         height: 80vh;
-        width: 50vw;
+        width: 54vw;
         justify-content: start;
         align-items: flex-start;
         padding: 40px 30px;
         flex-direction: column;
         gap: 30px;
         overflow: hidden;
+        @media screen and (max-width:1000px) {
+            width: 60%;
+            min-width: 39%;
+            height: 130%;
+            gap: 0px;
+            
+        }
 
         .photo{
             display: flex;
@@ -1265,8 +1289,9 @@ header{
             justify-content: center;
             align-items: center;
             gap: 60px;
-            background-color: yellow;
-            overflow: hidden;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            
             .text{
                 display: flex;
                 justify-content: start;
@@ -1274,6 +1299,9 @@ header{
                 align-items: center;
                 width: 600px;
                 gap: 40px;
+                flex-wrap: wrap;
+                word-wrap: break-word;
+                overflow-wrap: break-word;
     
                 .p1{
                     font-family: robotos;
@@ -1281,7 +1309,10 @@ header{
                     font-style: italic;
                     line-height: 30px;
                     width: 100%;
-                    padding-right: 60px
+                    padding-right: 60px;
+                    word-wrap: break-word;
+                    overflow-wrap: break-word;
+                    flex-wrap: wrap;
                 }
 
                 .logoname{
@@ -1336,19 +1367,27 @@ header{
 
 
 .team{
-    height: 125vh;
+    height: fit-content;
     width: 100vw;
+    min-width: 30vw;
     background-color: #162b45;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
+    padding: 30px 20px;
+    padding-bottom: 70px;
+    flex-wrap: wrap;
 
     .member{
         height: 68%;
         background-color: transparent;
         border: 1px solid gray;
         padding: 20px;
+
+        @media screen and (max-width:1000px) {
+            padding: 0px;
+        }
         
         a{
             color: whitesmoke;
@@ -1367,6 +1406,10 @@ header{
             flex-direction: column;
             gap: 20px;
             padding: 30px 10px;
+
+            @media screen and (max-width:1000px) {
+                padding: 5px;
+            }
             a{
                 &:hover{
                     color: #ff1481;
@@ -1376,11 +1419,18 @@ header{
             h3{
                 font-family: oswald;
                 font-size: 26px;
+
+                @media screen and (max-width:1000px) {
+                    font-size: 19px;
+                }
             }
             p{
                 font-family: robotos;
                 font-size: 15px;
                 color: gray;
+                @media screen and (max-width:1000px) {
+                    font-size: 13px;
+                }
             }
 
             ul{
@@ -1392,6 +1442,9 @@ header{
                 margin: 10px 0px;
                 font-family: robotos;
                 font-size: 15px;
+                @media screen and (max-width:1000px) {
+                    font-size: 13px;
+                }
                 li{
                     a{
                         color: gray;
@@ -1403,54 +1456,59 @@ header{
 
 }
 
-
+.center3{
+    height: 20vh;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    h1{
+        font-family: oswald;
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+        color: #112e41;
+        font-weight: bold;
+        @media (max-width:991px) {
+            font-size: 25px;
+            word-wrap: break-word;
+        }
+    }
+    h6{
+        font-size: 16px;
+        font-family: "lightt";
+        color: rgb(255, 0, 43);
+        word-wrap: break-word;
+    }
+}
 
 
 
 
 .truestory{
-    height: 135vh;
+    height: fit-content;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     gap: 30px;
-    padding: 80px 0px;
-
-    .title{
-        width: 100vw;
-        background-color: white;
-        @extend %centeralign;
-        flex-direction: column;
-        justify-content: space-between;
-        h1{
-            font-family: oswald;
-            font-size: 40px;
-            font-weight: bold;
-            letter-spacing: 1.5px;
-            color: #112e41;
-            font-weight: bold;
-            
-        }
-        h6{
-            font-size: 16px;
-            font-family: "lightt";
-            color: rgb(255, 0, 43);
-            word-wrap: break-word;
-        }
-
-    }
+    padding: 90px 0px;
 
     .blockk{
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
         height: 80%;
-        width: 30%;
+        width: 100%;
         gap: 30px;
         .member{
             height: 100%;
+            width: 362px;
             padding: 10px 0px;
             border: 1px solid rgb(221, 221, 221);
     
@@ -1503,6 +1561,7 @@ header{
     padding: 25px 20px;
 
 
+
     .div{
         img{
             margin: 10px 0px;
@@ -1516,7 +1575,7 @@ header{
         font-family: robotos;
         font-size: 14px;
         line-height: 20px;
-        color: gray;
+        color: rgb(217, 217, 217);
     }
 
     .two{
@@ -1548,7 +1607,7 @@ header{
             div{
                 height: 80%;
                 width: 10%;
-                background-color: #ff1481;
+                background-color: #fd0378;
                 color: rgb(197, 197, 197);
                 display: flex;
                 justify-content: center;
@@ -1567,20 +1626,30 @@ header{
 
     .three{
         display: flex;
+        width: 25%;
         justify-content: center;
         align-items: flex-start;
-        gap: 30px;
         h4{
             font-family: oswald;
             font-size: 25px;
-            color: white; 
+            color: rgb(255, 255, 255); 
         }
         .instaphoto{
             display: flex;
-            justify-content: space-between;
+            width: 100%;
+            justify-content: start;
             align-items: center;
             flex-wrap: wrap;
-            gap: 0px;
+            gap: 5px;
+            background-color: transparent;
+            a{
+                margin: -10px 0px;
+
+                &:hover{
+                    background-blend-mode: overlay;
+                    opacity: 0.4;
+                }
+            }
 
         }
     }
