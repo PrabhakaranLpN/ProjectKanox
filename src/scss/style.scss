@@ -1551,14 +1551,24 @@ header{
 
 
 .lastpage{
-    height: 80vh;
+    height: fit-content;
     width: 100vw;
     background-color: #162b45;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 130px;
-    padding: 25px 20px;
+    padding: 85px 20px;
+
+    @media screen and (max-width:1000px) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: start;
+        align-items: center;
+
+    }
 
 
 
@@ -1576,6 +1586,11 @@ header{
         font-size: 14px;
         line-height: 20px;
         color: rgb(217, 217, 217);
+        margin: 10px;
+        
+        @media screen and (max-width:1000px) {
+            width: 90%;
+        }
     }
 
     .two{
@@ -1584,6 +1599,9 @@ header{
         justify-content: start;
         align-items: flex-start;
         gap: 30px;
+        @media screen and (max-width:1000px) {
+            width:90%; 
+         }
         h4{
             font-family: oswald;
             font-size: 25px;
@@ -1629,6 +1647,12 @@ header{
         width: 25%;
         justify-content: center;
         align-items: flex-start;
+        height: 200px;
+        min-height: 180px;
+        width: 300px;
+        @media screen and (max-width:1000px) {
+           width:90%; 
+        }
         h4{
             font-family: oswald;
             font-size: 25px;
